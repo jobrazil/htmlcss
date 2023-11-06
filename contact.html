@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page de contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <main id="contenu">
+            <div id="cv">
+
+                <section class="cv-info" id="cv-forma">
+                    <h1>Formulaire d'incription</h1>
+                    <form id="form" method="post">
+                        <fieldset>
+                            <legend>Coordonnées</legend>
+                            <div class="coo-nom">
+                                <label for="nom">Nom :</label>
+                                <input type="text" name="nom" placeholder="Nom" required>
+                                <label for="prenom">Prénom :</label>
+                                <input type="text" name="prenom" placeholder="Prénom">
+                            </div>   
+                            <div class="coo-sexe">
+                                <span>Votre Sexe:</span>
+                                <span>
+                                    <input type="radio" name="sexe-homme-femme" value="homme" id="sexe-h" checked>
+                                    <label for="homme">Homme</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="sexe-homme-femme" value="femme" id="sexe-f">
+                                    <label for="femme">Femme</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="sexe-homme-femme" value="autre" id="sexe-autre">
+                                    <label for="autre">Autre</label>
+                                </span>
+                            </div>                         
+                            <div class="coo-email">
+                                <label for="email">Votre Email :</label>
+                                <input type="email" name="email" placeholder="toto@gmail.com" required>
+                            </div>
+                            <div class="coo-gsm">
+                                <label for="gsm">Votre Teléphone :</label>
+                                <input type="tel" placeholder="N° de mobile" name="gsm" required>
+    
+                                <input type="tel" placeholder="N° fixe" name="fixe">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Vos besoins</legend>
+                            <div id="coo-description">
+                                <select name="web" id="list-option" required>
+                                    <option value="" disabled selected>Veuillez selectionner une option</option>
+                                    <optgroup label="Front-end">
+                                    <option value="css">HTML/Css</option>
+                                    <option value="javascript">Javascript</option>
+                                    <option value="react">react</option>
+                                    </optgroup>
+                                    <optgroup label="Back-end">
+                                        <option value="node">Node</option>
+                                        <option value="express">Express</option>
+                                        <option value="php">php</option>
+                                        <option value="asp">asp</option>
+                                        <option value="javaspring">javaspring</option>
+    
+                                        </optgroup>
+                                </select>
+                                <textarea name="description" placeholder="Description du profil" rows="10" cols="50"></textarea>
+                            </div>
+                        </fieldset>
+                        <div id="coo-action">
+                            <button type="submit">Envoyer</button>
+                            <button type="reset">Reset</button>
+                            <a href="page.html">
+                            <button type="button">Retour au cv</button>
+                        </a>
+                        </div>                      
+                    </form>
+                </section>
+
+            </div>
+        </main>
+    </body>
+</html>
+
+
+<!--
+    payload??
+
+-->
